@@ -1,13 +1,13 @@
 import { IsEmail, IsInt, IsString, Min } from 'class-validator';
 
 export class CreateStudentDto {
-    @IsString()
-    readonly name: string;
+  @IsString()
+  name: string;
 
-    @IsInt()
-    @Min(1)
-    readonly age: number;
+  @IsInt()
+  @Min(1)
+  age: number;
 
-    @IsEmail()
-    readonly email: string;
+  @IsEmail()
+  email: string;
 }
