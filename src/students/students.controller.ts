@@ -4,7 +4,7 @@ import { CreateStudentDto } from './dto/create-student.dto';
 import { UpdateStudentDto } from './dto/update-student.dto';
 import {ApiBearerAuth, ApiOperation, ApiResponse, ApiTags, ApiUnauthorizedResponse} from "@nestjs/swagger";
 import { JwtAuthGuard } from "../auth/auth.guard";
-// import {Student} from "./student.entity";
+import {Student} from "./student.entity";
 
 export class Unauthorized {
   statusCode = 401;

@@ -15,9 +15,6 @@ export class Teacher {
     @Column({ unique: true })
     email: string;
 
-    // @Column()
-    // password: string;
-
     @OneToMany(() => Class, _class => _class.teacher)
     classes: Class[];
 }

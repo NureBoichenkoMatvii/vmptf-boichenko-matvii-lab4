@@ -18,7 +18,7 @@ import {CacheInterceptor, CacheModule} from "@nestjs/cache-manager";
         }),
         CacheModule.register({
             isGlobal: true,
-            ttl: 5, // seconds
+            ttl: 5000, // milliseconds
             max: 10, // maximum number of items in cache
         }),
         TypeOrmModule.forRootAsync({
